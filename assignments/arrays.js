@@ -54,7 +54,7 @@ let inventory = [
   { id: 49, car_make: "Chrysler", car_model: "Sebring", car_year: 1996 },
   { id: 50, car_make: "Lincoln", car_model: "Town Car", car_year: 1999 }
 ];
-
+console.log(inventory[0].car_model)
 // Example 1 for loop:
 
 // const arr = ['a', 'b', 'c', 'd'];
@@ -120,7 +120,7 @@ console.log(oldCars);
 let BMWAndAudi = [];
 
 for (let i = 0; i < inventory.length; i++) {
-  if(inventory[i].car_make === "BMW"|| inventory[i].car_make==="Audi") {
+  if(inventory[i].car_make === "BMW" || inventory[i].car_make==="Audi") {
     BMWAndAudi.push(inventory[i].car_year + " " + inventory[i].car_make+" "+inventory[i].car_model);
   }
 }
@@ -128,3 +128,4 @@ console.log(inventory[42].car_make==="Audi" || "BMW")
 console.log(BMWAndAudi);
 
 console.log(JSON.stringify(BMWAndAudi));
+

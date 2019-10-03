@@ -8,13 +8,17 @@
 let myFunction = () => {console.log("Function was invoked!")};
 myFunction();
 
+let testFunction= function(){
+    console.log("This is a test!");
+}
+
 // let anotherFunction = function (param) {
 //   return param;
 // };
 // anotherFunction("Example");
 
-let anotherFunction = (param) => {param};
-anotherFunction("Example");
+let anotherFunction = (param) => param;
+console.log(anotherFunction("Example"));
 
 // let add = function (param1, param2) {
 //   return param1 + param2;
@@ -34,8 +38,8 @@ console.log(subtract(1,2));
 
 // Stretch
 
-// exampleArray = [1,2,3,4];
-// const triple = exampleArray.map(function (num) {
-//   return num * 3;
-// });
-// console.log(triple);
+exampleArray = [1,2,6,4];
+const triple = exampleArray.map( (num)=> num * 3);
+console.log(triple);
+
+
